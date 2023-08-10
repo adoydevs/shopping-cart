@@ -18,10 +18,6 @@ document.getElementById('case-plus-btn').addEventListener('click' , function(){
 
     getProductPrice.innerText = newProductPrice;
 
-
-
-
-
 } )
 
 document.getElementById('case-minus-btn').addEventListener('click' , function(){
@@ -45,3 +41,50 @@ document.getElementById('case-minus-btn').addEventListener('click' , function(){
 
 
 } )
+
+document.getElementById('case-plus-button').addEventListener('click' , function(){
+    const currentPlusNumber = document.getElementById('get-product-num');
+    const currentPlusNumberString = currentPlusNumber.value;
+    const getCurrentPlusNumber = parseInt(currentPlusNumberString);
+
+    currentPlusNumber.value = getCurrentPlusNumber + 1;
+
+    const currentProductPrice = document.getElementById('case-price');
+    const currentProductPriceString = currentProductPrice.innerText;
+    const getCurrentProductPrice = parseInt(currentProductPriceString);
+
+    const getNewProductPrice = getCurrentProductPrice + 59;
+    currentProductPrice.innerText = getNewProductPrice;
+
+
+
+})
+
+document.getElementById('case-minus-button').addEventListener('click' , function(){
+    const currentMinusNumber = document.getElementById('get-product-num');
+    const currentMinusNumberString = currentMinusNumber.value;
+    const getCurrentMinusNumber = parseInt(currentMinusNumberString);
+
+    currentMinusNumber.value = getCurrentMinusNumber - 1;
+
+    document.getElementById('case-price');
+
+
+    const currentProductPrice = document.getElementById('case-price');
+    const currentProductPriceString = currentProductPrice.innerText;
+    const getCurrentProductPrice = parseInt(currentProductPriceString);
+
+    const getNewProductPrice = getCurrentProductPrice - 59;
+    currentProductPrice.innerText = getNewProductPrice;
+
+})
+
+// document.getElementById()
+
+
+// const subtotalPrice = document.getElementById('subtotal-price');
+//     const subtotalPriceString = subtotalPrice.innerText;
+//     const getSubTotalPrice = parseInt(subtotalPriceString);
+
+//     const getSubtotal = newProductPrice + getNewProductPrice;
+//     subtotalPrice.innerText = getSubtotal;
